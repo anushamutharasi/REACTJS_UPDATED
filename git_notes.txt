@@ -1,0 +1,161 @@
+ln: failed to create symbolic link '/e
+'C:\Windows\system32\drivers\etc\hosts
+/usr/bin/cp: cannot create regular fil
+'C:\Windows\system32\drivers\etc\proto
+/usr/bin/cp: cannot create regular fil
+'C:\Windows\system32\drivers\etc\servi
+/usr/bin/cp: cannot create regular fil
+'C:\Windows\system32\drivers\etc\netwo
+/usr/bin/cp: cannot create regular fil
+rm: cannot remove '/etc/post-install/0
+rm: cannot remove '/etc/post-install/0
+rm: cannot remove '/etc/post-install/0
+rm: cannot remove '/etc/post-install/9
+
+amutharasi@IM-LP-1906 MINGW64 ~/Deskto
+$ git init 
+Reinitialized existing Git repository 
+
+amutharasi@IM-LP-1906 MINGW64 ~/Deskto
+$ git add .
+
+amutharasi@IM-LP-1906 MINGW64 ~/Deskto
+$ git commit -m "adding project to the
+On branch main
+Your branch is based on 'origin/main',
+  (use "git branch --unset-upstream" t
+
+nothing to commit, working tree clean
+
+amutharasi@IM-LP-1906 MINGW64 ~/Deskto
+$ git remote set-url origin https://gi
+
+amutharasi@IM-LP-1906 MINGW64 ~/Deskto
+$ git config user.name
+anushamutharasi
+
+amutharasi@IM-LP-1906 MINGW64 ~/Deskto
+$ git push origin main
+To https://github.com/anushamutharasi/
+ ! [rejected]        main -> main (non
+error: failed to push some refs to 'ht
+fatal: refusing to merge unrelated histories
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git remote -v
+origin  https://github.com/anushamutharasi/REACTJS_UPDATED (fetch)
+origin  https://github.com/anushamutharasi/REACTJS_UPDATED (push)
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git remote --get remote.origin.url
+error: unknown option `get'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>   or: git remote rename [--[no-]progress] <old> <new>  
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>     
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>       
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git config  remote --get remote.origin.url
+error: key does not contain a section: remote
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git config --get remote.origin.url
+https://github.com/anushamutharasi/REACTJS_UPDATED
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git remote show origin
+* remote origin
+  Fetch URL: https://github.com/anushamutharasi/REACTJS_UPDATED
+  Push  URL: https://github.com/anushamutharasi/REACTJS_UPDATED
+  HEAD branch: main
+  Remote branch:
+    main tracked
+  Local branch configured for 'git pull':
+    main merges with remote main
+  Local ref configured for 'git push':
+    main pushes to main (local out of date)
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git pull
+fatal: refusing to merge unrelated histories
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$  git pull origin main --allow-unrelated-histories
+From https://github.com/anushamutharasi/REACTJS_UPDATED
+ * branch            main       -> FETCH_HEAD
+hint: Waiting for your editor to close the file... Vim: Error reading input, exiting...
+Vim: preserving files...
+Vim: Finished.
+
+error: There was a problem with the editor 'vi'.
+Not committing merge; use 'git commit' to complete the merge.
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main|MERGING)
+$ git commit -m "adding existing project"
+[main e2803c7] adding existing project
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git pull
+Already up to date.
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ 
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 4 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git push 
+Enumerating objects: 66, done.
+Counting objects: 100% (66/66), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (58/58), done.
+Writing objects: 100% (65/65), 686.53 KiB | 6.87 MiB/s, done.
+Total 65 (delta 9), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (9/9), done.
+To https://github.com/anushamutharasi/REACTJS_UPDATED
+   088cc94..e2803c7  main -> main
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git pull
+Already up to date.
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git stauts
+git: 'stauts' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ 
+
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git pull^C
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
+$
