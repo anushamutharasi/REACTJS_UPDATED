@@ -159,3 +159,9 @@ nothing to commit, working tree clean
 
 amutharasi@IM-LP-1906 MINGW64 ~/Desktop/REACTJS_PRACTICE_PROJECTS/Reactjs (main)
 $
+
+///////////////////////////////////////////////////////////////
+to chnage the git repository url:
+step 1:set the url : git remote set-url origin git@https://github.com/anushamutharasi/FLUENT_UI.git
+step 2: changing the url:git remote -v origin  git@https://github.com/anushamutharasi/FLUENT_UI.git
+ 2nd repository url is :https://github.com/anushamutharasi/REACTJS_UPDATED
