@@ -4,6 +4,7 @@ import Examples from "./React_Practice/components/Examples";
 
 import Header from "../src/Projects/InvestmentCalculator/components/Header";
 import Input from "./React_Practice/components/Input";
+import UserInput from "./Projects/InvestmentCalculator/components/UserInput";
 
 function App() {
  
@@ -20,6 +21,7 @@ function App() {
         <Input type="submit" text="Submit"></Input>
       </p> */}
       <Header/>
+      <UserInput/>
     </>
   );
 }

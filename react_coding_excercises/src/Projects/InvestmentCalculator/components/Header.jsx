@@ -1,8 +1,12 @@
 import React from 'react'
-
+import calculatorLogo from "../../../../src/assets/investment-calculator-logo.png";
 const Header = () => {
   return (
-    <div>Header for header</div>
+   <header id="header">
+    <img src={calculatorLogo}>
+    </img>
+    <h1>Investment calculator</h1>
+   </header>
   )
 }
 
